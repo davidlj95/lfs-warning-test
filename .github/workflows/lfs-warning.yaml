@@ -13,6 +13,6 @@ jobs:
           lfs: false
 
       - name: LFS Warning
-        uses: actionsdesk/lfs-warning@v3.1
+        uses: davidlj95/lfs-warning@8ff63e68c87c5cf4b619b16026a2f4425305fba7
         with:
           filesizelimit: 10mb
