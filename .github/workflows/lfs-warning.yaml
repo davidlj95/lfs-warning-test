@@ -13,6 +13,6 @@ jobs:
           lfs: false
 
       - name: LFS Warning
-        uses: actionsdesk/lfs-warning@v3.1
+        uses: davidlj95/lfs-warning@fix/consider-files-with-no-patch
         with:
           filesizelimit: 10mb
