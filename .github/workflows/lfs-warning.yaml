@@ -1,0 +1,18 @@
+name: LFS Warning
+
+on:
+  pull_request:
+
+jobs:
+  lfs-checking:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2.3.5
+        with:
+          lfs: false
+
+      - name: LFS Warning
+        uses: actionsdesk/lfs-warning@v3.1
+        with:
+          filesizelimit: 10mb
